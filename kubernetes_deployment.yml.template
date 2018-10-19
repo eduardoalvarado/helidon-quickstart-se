@@ -12,18 +12,18 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quickstart-se-56
+      app: quickstart-se-6
   template:
     metadata:
       labels:
-        app: quickstart-se-56
+        app: quickstart-se-6
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
-      - name: quickstart-se-56
+      - name: quickstart-se-6
         image: ${DOCKER_REPO}:${WERCKER_GIT_COMMIT}
         ports:
-        - name: quickstart-se-56
+        - name: quickstart-se-6
           containerPort: 8090
           protocol: TCP
       imagePullSecrets:
