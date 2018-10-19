@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quickstart-se
+      app: quickstart-se56
   template:
     metadata:
       labels:
